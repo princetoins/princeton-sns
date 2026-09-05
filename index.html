@@ -1,0 +1,896 @@
+
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>UN Partner Portal - Where UN Agencies and Civil Society Partners Connect</title>
+    <link rel="shortcut icon" href="https://icc-unpp-data.s3-eu-west-1.amazonaws.com/img/favicon.ico">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://icc-unpp-data.s3-eu-west-1.amazonaws.com/landing/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Owl -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <!-- Material Design Bootstrap -->
+    <link href="https://icc-unpp-data.s3-eu-west-1.amazonaws.com/landing/css/mdb.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="https://icc-unpp-data.s3-eu-west-1.amazonaws.com/landing/css/style.css" rel="stylesheet">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JVQS69X1FT"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-JVQS69X1FT');
+    </script>
+
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+        @media (min-width: 800px) and (max-width: 850px) {
+            .navbar:not(.top-nav-collapse) {
+                background: #1C2331 !important;
+            }
+        }
+
+        .navbar {
+            background-color: #2196F3 !important;
+        }
+
+        .navbar-menu-items>li {
+            padding: 0 .5rem !important;
+        }
+
+        .navbar-menu-items>li>a {
+            padding: .2rem !important;
+            display: inline-flex !important;
+            align-items: center !important;
+            font-size: .95rem !important;
+        }
+
+        .navbar-menu-item-icon {
+            color: #f7ba01;
+            font-size: .85rem;
+            margin-right: .35rem;
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 2rem;
+            background-color: #f7ba0136;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+
+        .footer-icons {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            display: flex;
+        }
+
+        .footer-logo {
+            width: 80px;
+        }
+
+        .footer-description {
+            margin: auto 2rem;
+        }
+
+        .green-btn-color {
+            background-color: #4ec423;
+        }
+
+        .header-text {
+            margin-top: 4rem;
+        }
+
+        .pb-1 {
+            padding-bottom: 1rem !important;
+        }
+
+        .justify-center {
+            align-items: center;
+        }
+
+        .page-title {
+            font-family: 'Roboto';
+            font-weight: 600;
+            font-size: 2rem;
+            color: #3C3C3C;
+        }
+
+        .page-title::after {
+            content: " ";
+            width: 60px;
+            height: 4px;
+            background-color: #2296F3CC;
+            display: block;
+            margin-top: .35rem;
+            margin-bottom: 2rem;
+            border-radius: 9px;
+        }
+
+        #about .description,
+        #partnership-opportunities .description {
+            color: #333333;
+            font-family: 'Roboto';
+            font-size: 1.2rem;
+        }
+
+        #partnership-opportunities .introsection {
+            padding-bottom: 0;
+        }
+
+        #about .about-video {
+            border-radius: 0.6rem;
+            border: none;
+            width: 100%;
+            height: 400px;
+            margin-left: 3rem;
+        }
+
+        #about .section {
+            margin-bottom: 3rem;
+        }
+
+        #about .section-title {
+            color: #2296F3CC;
+            font-weight: 600;
+            font-family: 'Roboto';
+        }
+
+        @media screen and (max-width: 768px) {
+            .navbar-brand {
+                margin-left: 0 !important;
+            }
+        }
+
+        .header-text {
+            font-family: 'Roboto';
+            margin-bottom: 6.1rem;
+            margin-top: 9rem;
+        }
+
+        .partnership-opportunities table thead th {
+            vertical-align: middle;
+            color: #FFF;
+            font-weight: bold;
+            font-size: 1.3rem;
+        }
+
+        .partnership-opportunities table th,
+        .partnership-opportunities table td {
+            border: 2px solid #fff;
+        }
+
+        .partnership-opportunities table thead {
+            background: #2296F3CC;
+            text-align: center;
+        }
+
+        .partnership-opportunities .table-striped tbody tr:nth-of-type(odd) {
+            background-color: #CFD5EA;
+        }
+
+        .partnership-opportunities .table-striped tbody tr:nth-of-type(even) {
+            background-color: #E9EBF5
+        }
+
+        .home-carousel .owl-stage-outer,
+        .home-carousel .owl-item img {
+            border-radius: .6rem;
+        }
+
+        .home-carousel {
+            margin: 13rem auto 0;
+        }
+
+        .home-text {
+            font-family: 'Roboto';
+            margin: 2rem;
+            position: relative;
+        }
+
+        .home-text::before {
+            content: " ";
+            width: 4px;
+            height: 100%;
+            background-color: #2296F3CC;
+            display: block;
+            margin-right: 2rem;
+            border-radius: 9px;
+            left: -2rem;
+            position: absolute;
+        }
+
+        #home .article-item {
+            position: relative;
+        }
+
+        #home .article-img {
+            max-height: 300px;
+            object-fit: cover;
+        }
+
+        #home .article-overlay {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            color: white;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: .6rem;
+        }
+
+        #home .article-text {
+            position: absolute;
+            bottom: .5rem;
+            right: 1rem;
+            font-size: 12px;
+        }
+
+        .filters {
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid #F2F2F2;
+            border-radius: .5rem;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .filter-item, .filter-action {
+            flex-grow: 1;
+            width: 100%;
+            margin: .3rem;
+        }
+
+        .filter-action {
+            margin-top: 2.3rem;
+        }
+
+        .filter-action input {
+            width: 100%;
+            background-color: #2196F3 !important;
+            box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+            padding: 0.79em 2rem;
+            font-size: 0.81rem;
+            transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+            border: 0;
+            border-radius: 0.125rem;
+            text-transform: uppercase;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .whatsNew {
+            margin-bottom: 3rem;
+        }
+
+        .latest-article img {
+            width: 100%;
+            max-height: 300px;
+            border-radius: .6rem;
+        }
+
+        .news-article-overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+            border-radius: .6rem;
+        }
+
+        .news-article-wrapper {
+            position: relative;
+        }
+
+        .news-article-title {
+            color: #222222;
+            display: block;
+            margin-top: .5rem;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .latest-article {
+            position: relative;
+            width: 100%;
+            margin-top: 4rem;
+        }
+
+        .footer-links {
+            float: right;
+        }
+
+        .logos {
+            height: 50px;
+            width: auto;
+        }
+
+        .logo {
+          padding: 0 !important;
+        }
+
+        .nav-container,
+        .footer {
+            max-width: 1300px;
+        }
+
+        @media (max-width: 1024px) {
+            .nav-container,
+            .footer {
+                max-width: 900px;
+                margin: 0;
+            }
+        }
+
+        @media (max-width: 760px) {
+            .home-carousel {
+                margin: 2rem auto;
+            }
+            .footer-links {
+                float: left;
+                text-align: left;
+            }
+            #about .about-video {
+                margin-left: 0;
+                height: 200px;
+            }
+            .header-text {
+                margin-bottom: 0;
+            }
+            .latest-article {
+                margin-top: 0;
+            }
+            .footer-logo {
+                max-width: 200px;
+            }
+            .filters {
+                flex-direction: column;
+            }
+        }
+        .urgent-banner {
+          display: flex;
+          padding: 1rem;
+          height: 3rem;
+          align-items: center;
+          text-align: center;
+          font-weight: 400;
+          background-color: #FDD835;
+          border: 2px solid #e3ba02;
+          color: #000000;
+          justify-content: space-between;
+        }
+        .bannerInfo {
+          font-size: .85rem;
+        }
+        .bannerTitle {
+          display: flex;
+          color: red;
+          font-weight: bold;
+          align-items: center;
+          display: flex;
+        }
+        .bannerContent {
+          display: flex;
+          flex-grow: 1;
+          align-items: center;
+        }
+        .closeButtonWrapper {
+          margin-right: 1rem;
+        }
+        .clickable {
+          cursor: pointer;
+        }
+        .answer-bot-container {
+          opacity: 1;
+          transition: all 0.5s ease-in-out;
+          position: fixed;
+          right: 20px;
+          bottom: 15px;
+          display: none;
+          cursor: pointer;
+          z-index: 999998;
+        }
+
+        .answer-bot-container.hidden {
+          opacity: 0;
+          transition: all 0.5s ease-in-out;
+        }
+
+        .answer-bot-button {
+          width: 80px;
+          height: 40px;
+          background: linear-gradient(228.3deg, #488DCB 16.88%, #6B5EA6 73.56%);
+          border-radius: 8px;
+          box-shadow: 0 1px 2px 0 #00000044;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          box-sizing: border-box;
+          padding: 4px;
+          position: relative;
+        }
+
+        .answer-bot-circle {
+          margin-top: -5px;
+          width: 60px;
+          height: 60px;
+          border-radius: 60px;
+          border: solid 2px #ffffff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          box-shadow: 0 1px 2px 0 #00000044;
+          background-color: #ffffff;
+        }
+
+        .answer-bot-image {
+          width: 40px;
+        }
+
+        .answer-bot-chat {
+          position: absolute;
+          bottom: 12px;
+          left: -70px;
+          width: 100px;
+          height: 30px;
+          border: solid 2px #ffffff;
+          background-color: #ffffff;
+          border-radius: 50px;
+          box-sizing: border-box;
+          box-shadow: 0 1px 2px 0 #00000044;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #444444;
+          font-weight: bold;
+          font-family: sans-serif;
+          font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark scrolling-navbar z-depth-0">
+        <div class="container nav-container">
+
+            <!-- Brand -->
+            <a class="navbar-brand" href="/">
+                <img id="logo-image" src="" height="47" alt="UN Partner Portal">
+            </a>
+
+            <!-- Collapse -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Links -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <!-- Left -->
+                <ul class="navbar-nav mr-auto navbar-menu-items">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/landing/about/">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/landing/opportunities/">Partnership Opportunities</a>
+                    </li>
+                    <!-- To show the subscribe page remove the comment here and in routes file in frontend -->
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="/subscribe">
+                            <span class="material-icons navbar-menu-item-icon">
+                                rss_feed
+                            </span>
+                            <span>
+                                Subscriptions
+                            </span>
+                        </a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://unpartnerportalcso.zendesk.com/hc/en-us">Resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://learning.unpartnerportal.org/">Learning Platform</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://unpartnerportalcso.zendesk.com/hc/en-us/sections/4408147929367-News-Center">News Centre</a>
+                    </li>
+                </ul>
+                <span class="material-icons" style="margin-right: 4px; color: white">
+                    language
+                </span>
+                <select class="form-control" id="lang-change" class="language" onchange="switchLanguage()" style="width: 121px; border-radius: 10px; margin-right: 20px">
+                    <option class="dropdown-item"  selected  value="en"> English
+                    </option>
+                    <option class="dropdown-item"  value="es"> Español
+                    </option>
+                    <option class="dropdown-item"  value="fr"> French
+                    </option>
+                </select>
+                <!-- Right -->
+                <ul class="navbar-nav nav-flex-icons">
+                    <li class="nav-item">
+                        <a href="/landing/register/" class="nav-link" style="margin-right: 20px">
+                            Register
+                        </a>
+                    </li>
+
+                    <li class="nav-item" style="width: 130px; text-align: center;">
+                        <a href="/login" class="nav-link green-btn-color rounded">
+                            Sign In
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+    <!-- Navbar -->
+    
+<div id="home">
+  <!-- Full Page Intro -->
+  <div class="main">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-7">
+          <div class="black-text mx-auto wow fadeIn header-text">
+            <h1 class="mb-0 h1-responsive blue-text">
+              <strong>Welcome to the UN Partner Portal</strong>
+            </h1>
+            <h4 class="mb-4 h4-responsive blue-text">Where UN Agencies and Civil Society Organizations Connect</h4>
+            <p class="home-text">IOM, UN Secretariat, UN Women, FAO, UNFPA, UNHCR, UNICEF, UNOPS, WFP, and WHO with operational support from UNICC, have joined forces to deliver the UN Partner Portal, a platform for Civil Society Organizations (CSOs) to engage with the UN on partnership opportunities. The UN Partner Portal is designed to facilitate a harmonised, efficient and easy collaboration between the UN and its partners.</p>
+            <div
+              style="
+                width: 100%;
+                display: flex;
+                padding: 0 0.75rem 0 0.75rem;
+                flex-wrap: wrap;
+                gap: 1.5rem;
+              "
+            >
+              <div style="height: 4rem">
+                <a href="https://www.iom.int/"
+                  ><img
+                    src="https://icc-unpp-data.s3-eu-west-1.amazonaws.com/landing/img/iom-logo-color.png"
+                    alt="IOM"
+                    class="logos img-fluid mx-auto"
+                /></a>
+              </div>
+              <div style="height: 4rem">
+                <a href="https://www.un.org/en/"
+                  ><img
+                    src="https://icc-unpp-data.s3-eu-west-1.amazonaws.com/landing/img/svg/UN_BLUE.svg"
+                    alt="UN SECRETARIAT"
+                    class="logos img-fluid mx-auto"
+                /></a>
+              </div>
+              <div style="height: 4rem">
+                <a href="https://www.unwomen.org/"
+                  ><img
+                    src="https://icc-unpp-data.s3-eu-west-1.amazonaws.com/landing/img/svg/UNWOMEN_BLUE.svg"
+                    alt="UN WOMEN"
+                    class="logos img-fluid mx-auto"
+                /></a>
+              </div>
+              <div style="height: 4rem">
+                <a href="https://www.fao.org/"
+                  ><img
+                    src="https://icc-unpp-data.s3-eu-west-1.amazonaws.com/landing/img/svg/FAO_BLUE.png"
+                    alt="FAO"
+                    class="logos img-fluid mx-auto"
+                /></a>
+              </div>
+              <div style="height: 4rem">
+                <a href="https://www.unfpa.org/"
+                  ><img
+                    src="https://icc-unpp-data.s3-eu-west-1.amazonaws.com/landing/img/svg/UNFPA_ORANGE.svg"
+                    alt="UNFPA"
+                    class="logos img-fluid mx-auto"
+                  />
+                </a>
+              </div>
+              <div style="height: 4rem">
+                <a href="https://www.unhcr.org/en-us/"
+                  ><img
+                    src="https://icc-unpp-data.s3-eu-west-1.amazonaws.com/landing/img/svg/UNHCR_BLUE.svg"
+                    alt="UNHCR"
+                    class="logos img-fluid mx-auto"
+                  />
+                </a>
+              </div>
+              <div style="height: 4rem">
+                <a href="https://www.unicef.org/"
+                  ><img
+                    src="https://icc-unpp-data.s3-eu-west-1.amazonaws.com/landing/img/UNICEF.png"
+                    alt="unicef"
+                    class="logos img-fluid mx-auto"
+                /></a>
+              </div>
+              <div style="height: 4rem">
+                <a href="https://www.unops.org/"
+                  ><img
+                    src="https://icc-unpp-data.s3-eu-west-1.amazonaws.com/landing/img/svg/UNOPS_BLUE.png"
+                    alt="UNOPS"
+                    class="logos img-fluid mx-auto"
+                /></a>
+              </div>
+              <div style="height: 4rem">
+                <a href="https://www.wfp.org/"
+                  ><img
+                    src="https://icc-unpp-data.s3-eu-west-1.amazonaws.com/landing/img/svg/WFP_BLUE.svg"
+                    alt="WFP"
+                    class="logos img-fluid mx-auto"
+                /></a>
+              </div>
+              <div style="height: 4rem">
+                <a href="https://www.who.int/"
+                  ><img
+                    src="https://icc-unpp-data.s3-eu-west-1.amazonaws.com/landing/img/svg/WHO_BLUE.png"
+                    alt="WHO"
+                    class="logos img-fluid mx-auto"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-5">
+          <div class="home-carousel owl-theme owl-carousel"></div>
+        </div>
+      </div>
+      <div class="row whatsNew">
+        <div class="col-xs-12 col-md-7">
+          <h3 class="mb-4 h3-responsive blue-text">What&#x27;s new?</h3>
+          <p class="home-text">
+            The UN Partner Portal is simplifying and strengthening UN partnership processes. By choosing the right Partners, we can better support projects and programs, achieve better results and be that much closer to reaching our goals, making life better for everyone everywhere. <br />
+            <br />
+            Visit our
+            <a
+              href="https://unpartnerportalcso.zendesk.com/hc/en-us/sections/4408147929367-News-Center"
+              >News Centre</a
+            >
+            for recent partnership success stories. <br /><br />
+            See
+            <a href="https://www.youtube.com/embed/LQrndmj38V4"
+              >UN Partner Portal video.</a
+            >
+            <br />
+            See
+            <a href="https://www.youtube.com/embed/oMbQsKM7OxA"
+              >PSEA Module video.</a
+            >
+          </p>
+        </div>
+        <div class="col-xs-12 col-md-5">
+          <div class="latest-article"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small stylish-color-dark pt-2">
+
+        <!-- Footer Links -->
+        <div class="container footer text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-8 mx-auto">
+
+                    <!-- Content -->
+                    <div class="justify-content-start footer-icons">
+                        <div>
+                            <a href="http://www.unicc.org">
+                                <img src="https://icc-unpp-data.s3-eu-west-1.amazonaws.com/landing/img/unicc-logo-n.png" alt="Visit UNICC" class="img-fluid mx-auto footer-logo">
+                            </a>
+                        </div>
+                        <p class="footer-description text-white-50">Delivery, management and operations by United Nations International Computing Centre</p>
+                    </div>
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-4 mx-auto pt-2">
+
+                    <!-- Links -->
+                    <ul class="list-unstyled footer-links">
+                        <li>
+                            <a href="https://unpartnerportalcso.zendesk.com/hc/en-us/requests/new">SUPPORT</a>
+                        </li>
+                        <li>
+                            <a href="https://unpartnerportalcso.zendesk.com/hc/en-us/requests/new">CONTACT US</a>
+                        </li>
+                        <li>
+                            <a href="https://unpartnerportalcso.zendesk.com/hc/en-us/article_attachments/360017929314/UN_Partner_Portal_Privacy_Policy_.pdf">PRIVACY</a>
+                        </li>
+                        <li>
+                            <a href="https://unpartnerportalcso.zendesk.com/hc/en-us/article_attachments/360018648633/UN_Partner_Portal_Terms_of_Use.pdf">TERMS AND CONDITIONS</a>
+                        </li>
+                    </ul>
+
+
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">UN Partner Portal © 2024</div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+    <div id="answer-bot-container" class="answer-bot-container">
+      <div class="answer-bot-button">
+        <div class="answer-bot-circle">
+          <img class="answer-bot-icon" src="https://icc-unpp-data.s3-eu-west-1.amazonaws.com/landing/img/answer-bot-face.png" />
+        </div>
+        <div class="answer-bot-chat">
+          <span>Ask Rafiki!</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://icc-unpp-data.s3-eu-west-1.amazonaws.com/landing/js/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://icc-unpp-data.s3-eu-west-1.amazonaws.com/landing/js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://icc-unpp-data.s3-eu-west-1.amazonaws.com/landing/js/bootstrap.bundle.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://icc-unpp-data.s3-eu-west-1.amazonaws.com/landing/js/mdb.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script type="text/javascript" src="https://icc-unpp-data.s3-eu-west-1.amazonaws.com/landing/js/custom.js"></script>
+    <!-- Import Moment.js -->
+    <script type="text/javascript" src="https://icc-unpp-data.s3-eu-west-1.amazonaws.com/landing/js/moment.min.js"></script>
+    <!-- Owl -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- Initializations -->
+    <script type="text/javascript">
+        // Animations initialization
+        new WOW().init();
+
+        function switchLanguage() {
+            var lang = document.getElementById("lang-change").value;
+            document.cookie = "lang=" + lang + "; path=/";
+            window.location.reload()
+        }
+    </script>
+    <script>
+      $(document).ready(function () {
+        var lang = document.getElementById("lang-change").value;
+        if(lang === "en") document.getElementById("logo-image").src = "https://icc-unpp-data.s3-eu-west-1.amazonaws.com/landing/img/unpp_en.svg";
+        else if(lang === "es") document.getElementById("logo-image").src = "https://icc-unpp-data.s3-eu-west-1.amazonaws.com/landing/img/unpp_sp.svg";
+        else if(lang === "fr") document.getElementById("logo-image").src = "https://icc-unpp-data.s3-eu-west-1.amazonaws.com/landing/img/unpp_fr.svg";
+        else document.getElementById("logo-image").src = "";
+      })
+    </script>
+
+    <script>
+      var lang = document.getElementById("lang-change").value;
+      const answerBot = document.getElementById("answer-bot-container")
+      window.zESettings = {
+        webWidget: {
+          answerBot: {
+            title: {
+              '*': 'Ask Rafiki'
+            },
+            // contactOnlyAfterQuery: true,
+            avatar: {
+              url: "https://www.unpartnerportal.org/answer-bot-face.png",
+              name: {
+                '*': 'Rafiki'
+              }
+            }
+          }
+        }
+      };
+
+      window.zE || (function (e, t, s) {
+        let n = window.zE = window.zEmbed = function () {
+          n._.push(arguments);
+        },
+          a = n.s = e.createElement(t),
+          r = e.getElementsByTagName(t)[0];
+        n.set = function (e) {
+          n.set._.push(e);
+        }, n._ = [], n.set._ = [], a.async = true, a.setAttribute("charset", "utf-8"), a.src = "https://static.zdassets.com/ekr/asset_composer.js?key=" + s, n.t = +new Date(), a.type = "text/javascript", r.parentNode.insertBefore(a, r);
+      })(document, "script", "c291ce52-a455-4aab-974f-33943dca71e7");
+
+      zE("webWidget", "setLocale", lang);
+      zE("webWidget:on", "close", function () {
+        zE("webWidget", "hide");
+        answerBot.classList.remove("hidden");
+      });
+      zE("webWidget", "hide");
+
+      window.addEventListener("load", function () {
+        answerBot.addEventListener('click', function () {
+          zE('webWidget', 'show');
+          zE('webWidget', 'open');
+          answerBot.classList.add('hidden')
+        });
+        setTimeout(function () {
+          answerBot.style.display = "block";
+        }, 3000);
+      });
+
+    </script>
+    
+<script>
+  $(document).ready(function() {
+
+      const sliderContainer = $('.home-carousel')[0];
+
+      const articlesImages = JSON.parse('');
+
+      articlesImages.splice(0, articlesImages.length - 2).forEach(item => {
+
+          $(`<div class='article-item'><img class='article-img' src='${item.content_url}' /><div class='article-overlay'><span class='article-text'>Photo: ${(item.display_file_name).split('.').shift()}</span></div></div>`).appendTo(sliderContainer);
+
+      });
+
+      $(".owl-carousel").owlCarousel({
+
+          items: 1,
+
+          loop: true,
+
+          autoplay: true,
+
+      });
+
+      const newsCenterArticle = 
+
+      const articleText = $.parseHTML($.parseHTML(newsCenterArticle.body)[0].innerHTML)[3].textContent;
+      const articleImageUrl = $.parseHTML($.parseHTML(newsCenterArticle.body)[0].innerHTML)[1].src;
+      const articleImageAlt = $.parseHTML($.parseHTML(newsCenterArticle.body)[0].innerHTML)[1].alt;
+
+      const latestArticleHtml = `
+          <a href=${newsCenterArticle.html_url}>
+              <div class="news-article-wrapper">
+                  <img src="${articleImageUrl}" alt="${articleImageAlt}" />
+                  <div class="article-overlay">
+                      <span class="article-text">${articleText}</span>
+                  </div>
+              </div>
+              <span class="news-article-title">${newsCenterArticle.title}</span>
+          </a>
+      `;
+      $(".latest-article").append(latestArticleHtml);
+
+  })
+</script>
+
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon='{"version":"2024.11.0","token":"a6ab516020c74a88ae94985226904e59","spa":2}' crossorigin="anonymous"></script>
+</body>
+
+</html>
