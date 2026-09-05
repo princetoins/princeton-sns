@@ -1,0 +1,263 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Redirecting to Dutch Eredivisie...</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      font-family: Arial, sans-serif;
+      color: #ffffff;
+      background:
+        radial-gradient(circle at top left, rgba(34, 197, 94, 0.22), transparent 32%),
+        radial-gradient(circle at bottom right, rgba(59, 130, 246, 0.20), transparent 34%),
+        linear-gradient(135deg, #07111f, #101827 52%, #05070d);
+      overflow: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background:
+        linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px);
+      background-size: 34px 34px;
+      mask-image: linear-gradient(to bottom, transparent, black 25%, black 75%, transparent);
+      pointer-events: none;
+    }
+
+    .wrap {
+      width: min(92%, 460px);
+      position: relative;
+      z-index: 1;
+    }
+
+    .card {
+      text-align: center;
+      padding: 34px 26px 28px;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 8px;
+      background: rgba(15, 23, 42, 0.78);
+      box-shadow: 0 26px 70px rgba(0, 0, 0, 0.42);
+      backdrop-filter: blur(14px);
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 18px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(34, 197, 94, 0.12);
+      border: 1px solid rgba(34, 197, 94, 0.35);
+      color: #86efac;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0;
+    }
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #22c55e;
+      box-shadow: 0 0 18px #22c55e;
+      animation: pulse 1.2s ease-in-out infinite;
+    }
+
+    .loader {
+      width: 58px;
+      height: 58px;
+      margin: 0 auto 20px;
+      border-radius: 50%;
+      border: 4px solid rgba(255, 255, 255, 0.14);
+      border-top-color: #22c55e;
+      border-right-color: #38bdf8;
+      animation: spin 1s linear infinite;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: 27px;
+      line-height: 1.2;
+      font-weight: 800;
+    }
+
+    p {
+      margin: 0;
+      color: #cbd5e1;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    .count {
+      color: #86efac;
+      font-weight: 800;
+    }
+
+    .progress {
+      height: 8px;
+      margin: 24px 0 22px;
+      overflow: hidden;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.12);
+    }
+
+    .progress span {
+      display: block;
+      height: 100%;
+      width: 0%;
+      border-radius: inherit;
+      background: linear-gradient(90deg, #22c55e, #38bdf8);
+      transition: width 0.3s ease;
+    }
+
+    .btn {
+      display: inline-block;
+      width: 100%;
+      max-width: 220px;
+      padding: 13px 18px;
+      border-radius: 7px;
+      background: linear-gradient(135deg, #22c55e, #38bdf8);
+      color: #031018;
+      text-decoration: none;
+      font-weight: 800;
+      box-shadow: 0 12px 30px rgba(34, 197, 94, 0.22);
+    }
+
+    .btn:hover {
+      filter: brightness(1.06);
+    }
+
+    .small {
+      margin-top: 16px;
+      font-size: 12px;
+      color: #94a3b8;
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        opacity: 0.45;
+        transform: scale(0.9);
+      }
+
+      50% {
+        opacity: 1;
+        transform: scale(1.15);
+      }
+    }
+
+    @media (max-width: 420px) {
+      .card {
+        padding: 30px 20px 24px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="wrap">
+    <section class="card">
+      <div class="badge">
+        <span class="dot"></span>
+        Live Match Stream
+      </div>
+
+      <div class="loader"></div>
+
+      <h1>Redirecting...</h1>
+
+      <p>
+        Please wait. You will be redirected to Dutch Eredivisie in
+        <span class="count" id="count">1</span>
+        seconds.
+      </p>
+
+      <div class="progress">
+        <span id="bar"></span>
+      </div>
+
+      <a class="btn" href="https://antsports.tv/go/755185B4">Open Now</a>
+
+      <div class="small">Secure redirect is preparing your stream link.</div>
+    </section>
+  </main>
+
+  <script>
+    var redirectUrl = "https://antsports.tv/go/755185B4";
+    var seconds = 1;
+    var totalSeconds = seconds;
+    var countEl = document.getElementById("count");
+    var barEl = document.getElementById("bar");
+
+    function updateProgress() {
+      var completed = ((totalSeconds - seconds) / totalSeconds) * 100;
+      barEl.style.width = completed + "%";
+      countEl.textContent = seconds;
+    }
+
+    updateProgress();
+
+    var timer = setInterval(function () {
+      seconds--;
+      updateProgress();
+
+      if (seconds <= 0) {
+        clearInterval(timer);
+        barEl.style.width = "100%";
+        window.location.href = redirectUrl;
+      }
+    }, 1000);
+  </script>
+
+  <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4963090,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4963090&101" alt="web tracker" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+
+  <!-- Google tag -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4V3Y76MW43"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag("js", new Date());
+    gtag("config", "G-4V3Y76MW43");
+  </script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v3d52b47920f24c319d37e2661827c42b1787588026925" integrity="sha512-d9sL6GJLXn6fInD1+TVXhTcQOsmxeHfmHAvwGDIxp5TO+uo1fiWW7mHomMj4MLRlCsJDTqXzWLHJFFlPCEIj/A==" data-cf-beacon='{"version":"2024.11.0","token":"25d3cbeb77df4c0eab0e58190eb2621f","r":1}' crossorigin="anonymous"></script>
+</body>
+</html>
